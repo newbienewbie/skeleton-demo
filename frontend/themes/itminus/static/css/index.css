@@ -1,0 +1,263 @@
+#header {
+  /*banner*/
+  /* 导航条 */
+}
+#header > div:first-child {
+  background: #414445;
+  color: palegreen;
+  border-radius: 2em 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#header > div:first-child .logo {
+  border-radius: 2em 3em 2em 3em;
+}
+#header > div:first-child span {
+  font-size: 2.5em;
+}
+#header ul {
+  margin-top: 0.4em;
+}
+ul.tree li a.active {
+  background-color: deepskyblue;
+}
+ul.tree li a:hover {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+#module {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* main */
+  /* 侧边栏 */
+}
+#module > div {
+  background-color: beige;
+  flex: 75%;
+  /* 文章列表区，不含分页 */
+}
+#module > div > article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* 文章单项 */
+}
+#module > div > article > div.list-item {
+  flex: 0 0 24%;
+  width: 24%;
+  background-color: palegreen;
+  margin-bottom: 0.5em;
+  /* 作者、日期 */
+  /* 摘要 */
+  /* 配图 */
+}
+#module > div > article > div.list-item h2 {
+  text-align: center;
+  font-size: 1.3em;
+  overflow: hidden;
+}
+#module > div > article > div.list-item > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#module > div > article > div.list-item > div:nth-child(4) {
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+}
+#module > div > article > div.list-item > div:nth-child(3) img {
+  width: 100%;
+}
+#module > div article.ebook-detail div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* 图片 */
+  /* 元信息 */
+  /* 简介信息 */
+}
+#module > div article.ebook-detail div:nth-child(2) > div:first-child {
+  flex: 0 0 30%;
+}
+#module > div article.ebook-detail div:nth-child(2) > div:nth-child(2) {
+  flex: 0 0 50%;
+}
+#module > div article.ebook-detail div:nth-child(2) > div:nth-child(2) dl.meta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+#module > div article.ebook-detail div:nth-child(2) > div:nth-child(2) dl.meta div {
+  display: table;
+  width: 100%;
+}
+#module > div article.ebook-detail div:nth-child(2) > div:nth-child(2) dl.meta div > dd {
+  width: 10%;
+  display: table-cell;
+}
+#module > div article.ebook-detail div:nth-child(2) > div:nth-child(2) dl.meta div > dt {
+  display: table-cell;
+  width: 40%;
+}
+#module > div article.ebook-detail div:nth-child(2) > div:last-child {
+  flex: 0 0 100%;
+}
+#module > div article.ebook-detail div:nth-child(2) > div:last-child > div {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+#module > aside {
+  flex: 25%;
+  background-color: salmon;
+}
+#about .about-item {
+  background-color: #ccdfd2;
+  margin-top: 0.5em;
+  border-width: 0.5em;
+  border-radius: 1.0em;
+}
+#about .about-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#module {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* main  */
+  /* aside */
+}
+#module > div .movie-list-item > div:first-child {
+  border: 2px orange solid  ;
+  position: relative  ;
+  margin: 0 ;
+  margin-top: 2em  ;
+  padding: 0 ;
+}
+#module > div .movie-list-item > div:first-child img.movie-poster {
+  display: inline-block;
+  width: 100%  ;
+  vertical-align: middle  ;
+}
+#module > div .movie-list-item > div:first-child img.movie-play-button {
+  position: absolute;
+  left: 50%  ;
+  top: 50%  ;
+  margin: -32px -32px;
+  /* 播放按钮大小为64*64 */
+}
+#module > div .movie-list-item > div:nth-child(2) h4 {
+  text-align: center;
+  margin-top: 0.2em ;
+}
+#module > div .movie-detail .movie-detail-play {
+  position: relative;
+  margin: auto;
+}
+#module > div .movie-detail .movie-detail-play .movie-detail-tips {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  margin: auto;
+  /* 不能正常播放时的提示 */
+}
+#module > div .movie-detail .movie-detail-play .movie-detail-tips > div {
+  position: relative;
+  left: -50%;
+  top: -50%;
+  color: red ;
+  background: #dcdcdc;
+  font-size: 2em;
+}
+#module > div .movie-detail .movie-detail-play .movie-detail-tips > div > a {
+  color: olivedrab;
+}
+#module .contact {
+  /* 描述 */
+  /* 地图 */
+  /* 反馈 */
+}
+#module .contact .map {
+  background: lightblue;
+  width: 100%;
+  height: 400px;
+}
+#module .contact .map > div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  font-family: "微软雅黑";
+}
+#module .contact .feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: stretch;
+}
+#module .contact .feedback .feedback-form {
+  flex: 50%;
+  background: salmon;
+}
+#module .contact .feedback .feedback-form h2 {
+  text-align: center;
+}
+#module .contact .feedback .feedback-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#module .contact .feedback .feedback-form form div {
+  display: flex;
+  flex-direction: row;
+  margin: 0.8em;
+}
+#module .contact .feedback .feedback-form form div label {
+  flex: 20%;
+}
+#module .contact .feedback .feedback-form form div input,
+#module .contact .feedback .feedback-form form div textarea {
+  flex: 80%;
+}
+#module .contact .feedback .feedback-form form div button {
+  width: 100%;
+}
+#module .contact .feedback .feedback-info {
+  flex: 50%;
+  background: deepskyblue;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+#module .contact .feedback .feedback-info h2 {
+  text-align: center;
+}
+#module .contact .feedback .feedback-info form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#module .contact .feedback .feedback-info form input,
+#module .contact .feedback .feedback-info form textarea {
+  margin-bottom: 0.5em;
+}
+#module .contact .feedback .feedback-info form input,
+#module .contact .feedback .feedback-info form textarea {
+  margin-bottom: 1em;
+}
+#module .contact .feedback .feedback-info form button {
+  margin-bottom: 0;
+}

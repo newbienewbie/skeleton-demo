@@ -1,0 +1,17 @@
+{
+  "name": "skeleton-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lessc": "node lessc.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "less": "^2.7.3",
+    "tiny-skeleton":"0.0.1"
+  }
+}
